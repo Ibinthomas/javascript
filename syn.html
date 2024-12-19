@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img src="../Gallery_Vault/galleryvault/media/wall1.jpg"  id="img" style="height: 40%; width: 50%;">
+    <script>
+        // console.log('start');
+        // for(i=0;i<=1000;i++){
+        //     console.log(i);
+        // }
+        // console.log('end')
+
+
+        // setTimeout(() => {
+        //     console.log('inside');
+        // }, 3000);
+        // console.log('end');
+
+
+
+        // let count=10
+        // let data = setInterval(() => {
+        //    document.getElementById('time').innerHTML=count
+        //    console.log(count);
+           
+        //    count--
+        //    if(count<0){
+        //         clearInterval(data)
+        //    }
+           
+
+        // }, 1000);
+
+
+        // let min=2
+        // let sec=2
+        // let data = setInterval(() => {
+        //     document.getElementById('time').innerHTML=min+':'+sec
+            
+        //     sec--
+        //     if(sec<0){
+        //         min--
+        //         sec=9
+        //         if(min<0){
+        //             clearInterval(data)
+        //         }
+
+        //     }
+        // }, 1000);
+
+
+        let sec=2
+        let img=document.getElementById('img')
+        let data = setInterval(() => {
+            document.getElementById('time').innerHTML=sec
+            
+            sec--
+            if(sec<0){
+                document.getElementById('img').style.display='none'
+                clearInterval(data)
+                
+
+            }
+        }, 1000);
+
+
+    </script>
+</body>
+</html>
