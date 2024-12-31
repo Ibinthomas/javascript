@@ -7,15 +7,74 @@
 </head>
 <body>
     <script>
-        try{
-            console.log('a')
+        // try{
+        //     console.log('a')
+        // }
+        // catch(error){
+        //     console.log('error',error.message);
+        // }
+        // finally{
+        //     console.log('prg ends');
+        // }
+
+        // ----------------oops---------
+
+        // class std{
+        //     constructor(){
+        //         console.log('demo data');
+
+        //     }
+        //     display(){
+        //         console.log('demo data');
+
+        //     }
+        // }
+        // let std1=new std
+        // std1.display()
+
+
+        // class std{
+        //     constructor(name){
+        //         this.name=name
+        //         console.log('demo data');
+
+        //     }
+        //     display(age){
+        //         console.log('display',this.name,age);
+
+        //     }
+        // }
+        // let std1=new std('manu')
+        // std1.display(22)
+
+        // class school{
+        //     constructor(){
+        //         console.log('school class');
+        //     }
+        //     classroom(){
+        //         console.log('classroom')
+        //     }
+        // }
+
+
+        class std extends school{
+            constructor(name){
+                super()
+                this.name=name
+                console.log('demo data');
+
+            }
+
+            display(age){
+                console.log('display',this.name,age);
+                
+            }
         }
-        catch(error){
-            console.log('error',error.message);
-        }
-        finally{
-            console.log('prg ends');
-        }
+
+        let std1= new std('manu')
+        std1.display(22)
+        std1.classroom()
+
     </script>
 </body>
 </html>
